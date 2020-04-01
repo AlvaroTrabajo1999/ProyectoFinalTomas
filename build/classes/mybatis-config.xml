@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE configuration PUBLIC '-//mybatis.org//DTD Config 3.0//EN' 'http://mybatis.org/dtd/mybatis-3-config.dtd'>
+<configuration>
+
+	<properties resource='jdbc.properties' />
+	
+	<typeAliases>
+		<typeAlias type='modelo.pojo.Accidente' alias='Accidente'></typeAlias>
+		<typeAlias type='modelo.pojo.Distrito' alias='Distrito'></typeAlias>
+		<typeAlias type='modelo.pojo.Tipo_Accidente' alias='TipoAccidente'></typeAlias>
+		<typeAlias type='modelo.pojo.Tipo_Sexo' alias='TipoSexo'></typeAlias>
+		<typeAlias type='modelo.pojo.Tipo_Vehiculo' alias='TipoVehiculo'></typeAlias>
+		<typeAlias type='modelo.pojo.EstadisticaDistrito' alias='EstadisticaDistrito'></typeAlias>
+		<typeAlias type='modelo.pojo.EstadisticaSexo' alias='EstadisticaSexo'></typeAlias>
+		<typeAlias type='modelo.pojo.Usuario' alias='Usuario'></typeAlias>
+	</typeAliases>
+	
+	<environments default='development'>
+		<environment id='development'>
+			<transactionManager type='JDBC' />
+			<dataSource type='POOLED'>
+				<property name='driver' value='${driverClassName}' />
+				<property name='url' value='${url}' />
+				<property name='username' value='${username}' />
+				<property name='password' value='${password}' />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<mappers>
+		<mapper resource='modelo/dao/mapper/MapperBase.xml' />
+		<mapper resource='modelo/dao/mapper/MapperRest.xml' />
+	</mappers>
+</configuration>
