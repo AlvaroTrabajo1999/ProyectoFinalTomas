@@ -15,7 +15,7 @@
 	
 		<div id="navigator">
 			<a href="Princial">Home</a>
-			<a href="CrearTorneo">Home</a>
+			<a href="Torneo">Torneo</a>
 		</div>
 	
 		<div id="body">
