@@ -5,14 +5,11 @@
 	<properties resource='jdbc.properties' />
 	
 	<typeAliases>
-		<typeAlias type='modelo.pojo.Accidente' alias='Accidente'></typeAlias>
-		<typeAlias type='modelo.pojo.Distrito' alias='Distrito'></typeAlias>
-		<typeAlias type='modelo.pojo.Tipo_Accidente' alias='TipoAccidente'></typeAlias>
-		<typeAlias type='modelo.pojo.Tipo_Sexo' alias='TipoSexo'></typeAlias>
-		<typeAlias type='modelo.pojo.Tipo_Vehiculo' alias='TipoVehiculo'></typeAlias>
-		<typeAlias type='modelo.pojo.EstadisticaDistrito' alias='EstadisticaDistrito'></typeAlias>
-		<typeAlias type='modelo.pojo.EstadisticaSexo' alias='EstadisticaSexo'></typeAlias>
-		<typeAlias type='modelo.pojo.Usuario' alias='Usuario'></typeAlias>
+		<typeAlias type='modelo.pojo.Circuito' alias='Circuito'></typeAlias>
+		<typeAlias type='modelo.pojo.Motocicleta' alias='Motocicleta'></typeAlias>
+		<typeAlias type='modelo.pojo.Participacion' alias='Participacion'></typeAlias>
+		<typeAlias type='modelo.pojo.Piloto' alias='Piloto'></typeAlias>
+		<typeAlias type='modelo.pojo.Torneo' alias='Torneo'></typeAlias>
 	</typeAliases>
 	
 	<environments default='development'>
@@ -28,7 +25,7 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource='modelo/dao/mapper/MapperBase.xml' />
-		<mapper resource='modelo/dao/mapper/MapperRest.xml' />
+		<mapper resource='modelo/dao/mapper/BaseMapper.xml' />
 	</mappers>
+	
 </configuration>
